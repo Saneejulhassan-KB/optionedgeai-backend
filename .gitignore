@@ -1,0 +1,41 @@
+# =============================================================================
+# Git ignore — files that must NEVER be committed to version control
+# =============================================================================
+
+# Virtual environment (can be recreated with pip install -r requirements.txt)
+.venv/
+venv/
+env/
+
+# Local secrets — contains API keys and JWT secrets
+.env
+
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local SQLite database (created during development)
+*.db
+*.sqlite3
+
+# IDE / OS noise
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/

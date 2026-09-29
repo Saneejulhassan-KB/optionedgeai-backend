@@ -1,0 +1,1974 @@
+{
+  "started_at": "2026-08-14T09:29:18.213331+00:00",
+  "finished_at": "2026-08-14T09:31:33.104083+00:00",
+  "market_phase": "OPEN",
+  "checks": [
+    {
+      "name": "Corrected SQLite schema",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "candles.id=INTEGER; coverage cols ok; historical_chunks present"
+    },
+    {
+      "name": "12 configured series COMPLETE",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "complete=12/12"
+    },
+    {
+      "name": "Coverage NSE_INDEX|Nifty 50 3m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=142693 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:27:00+00:00 gaps=0"
+    },
+    {
+      "name": "Coverage NSE_INDEX|Nifty 50 5m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=85687 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:25:00+00:00 gaps=0"
+    },
+    {
+      "name": "Coverage NSE_INDEX|Nifty 50 15m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=28597 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:15:00+00:00 gaps=0"
+    },
+    {
+      "name": "Coverage NSE_INDEX|Nifty 50 1D",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=6619 earliest=2000-01-02T18:30:00+00:00 latest=2026-08-13T18:30:00+00:00 gaps=0"
+    },
+    {
+      "name": "Coverage NSE_INDEX|Nifty Bank 3m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=142668 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:12:00+00:00 gaps=1"
+    },
+    {
+      "name": "Coverage NSE_INDEX|Nifty Bank 5m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=85670 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:10:00+00:00 gaps=1"
+    },
+    {
+      "name": "Coverage NSE_INDEX|Nifty Bank 15m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=28589 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:00:00+00:00 gaps=0"
+    },
+    {
+      "name": "Coverage NSE_INDEX|Nifty Bank 1D",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=6610 earliest=1999-12-31T18:30:00+00:00 latest=2026-08-13T18:30:00+00:00 gaps=0"
+    },
+    {
+      "name": "Coverage BSE_INDEX|SENSEX 3m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=142610 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:15:00+00:00 gaps=1"
+    },
+    {
+      "name": "Coverage BSE_INDEX|SENSEX 5m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=85605 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:15:00+00:00 gaps=1"
+    },
+    {
+      "name": "Coverage BSE_INDEX|SENSEX 15m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=28595 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:15:00+00:00 gaps=0"
+    },
+    {
+      "name": "Coverage BSE_INDEX|SENSEX 1D",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=COMPLETE count=6619 earliest=2000-01-02T18:30:00+00:00 latest=2026-08-13T18:30:00+00:00 gaps=0"
+    },
+    {
+      "name": "Today's market synchronization",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "upserted={'3m': 115, '5m': 69, '15m': 23, '1D': 1}"
+    },
+    {
+      "name": "can_trade false while WS disconnected",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=DEGRADED blockers=['WebSocket feed is DISCONNECTED']"
+    },
+    {
+      "name": "Feed starts DISCONNECTED",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "DISCONNECTED"
+    },
+    {
+      "name": "Feed transition to CONNECTED",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=CONNECTED transitions_observed=['DISCONNECTED', 'CONNECTED']"
+    },
+    {
+      "name": "Real ticks received",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "ticks=3 last_ltp=24377.15"
+    },
+    {
+      "name": "last_message_at updates",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "2026-08-14T09:29:21.895169+00:00"
+    },
+    {
+      "name": "3m candle updated from live path",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "{'timestamp': '2026-08-14T09:27:00+00:00', 'ist': '14:57:00', 'open': 24379.25, 'high': 24383.1, 'low': 24375.6, 'close': 24377.15, 'is_closed': False, 'source': 'websocket'}"
+    },
+    {
+      "name": "5m candle updated from live path",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "{'timestamp': '2026-08-14T09:25:00+00:00', 'ist': '14:55:00', 'open': 24380.9, 'high': 24384.4, 'low': 24375.6, 'close': 24377.15, 'is_closed': False, 'source': 'websocket'}"
+    },
+    {
+      "name": "15m candle updated from live path",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "{'timestamp': '2026-08-14T09:15:00+00:00', 'ist': '14:45:00', 'open': 24370.0, 'high': 24384.4, 'low': 24364.75, 'close': 24377.15, 'is_closed': False, 'source': 'websocket'}"
+    },
+    {
+      "name": "Live ticks reached canonical reconciler",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "forming_snapshot={'3m': 'websocket', '5m': 'websocket', '15m': 'websocket'}"
+    },
+    {
+      "name": "Indicators update from candles",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "ema200=READY rsi=READY atr=READY price=24377.15"
+    },
+    {
+      "name": "MarketState updates",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "trend=up structure=UP"
+    },
+    {
+      "name": "Bootstrap reflects actual WebSocket state",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "websocket=CONNECTED connected=True"
+    },
+    {
+      "name": "can_trade only when all requirements satisfied (post-connect)",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "can_trade=True status=READY blockers=[]"
+    },
+    {
+      "name": "Completed candles FORMING->CLOSED / boundary integrity",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "3m: last_closed=14:54 current_open=14:57 forming_closed=False; 5m: last_closed=14:50 current_open=14:55 forming_closed=False; 15m: last_closed=14:30 current_open=14:45 forming_closed=False"
+    },
+    {
+      "name": "Intentional disconnect/reconnect",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "reconnect_count=1 status=CONNECTED"
+    },
+    {
+      "name": "Reconnect backfills 3m, 5m, 15m",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "backfill_calls=[{'3m': 115, '5m': 69, '15m': 23}]"
+    },
+    {
+      "name": "No duplicate candles after reconnect",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "duplicates before=0 after=0"
+    },
+    {
+      "name": "No new coverage gaps introduced by reconnect",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "before={'3m': 0, '5m': 0, '15m': 0, '1D': 0} after={'3m': 0, '5m': 0, '15m': 0, '1D': 0}"
+    },
+    {
+      "name": "Feed silent beyond DATA_STALE_THRESHOLD becomes DEGRADED",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "snap={'status': 'DEGRADED', 'connected': True, 'data_fresh': False, 'staleness_seconds': 122.01342, 'stale_after_seconds': 120.0, 'last_message_at': '2026-08-14T09:29:27.637346+00:00', 'last_connected_at': None, 'last_successful_reconnect': None, 'reconnect_count': 0, 'disconnect_count': 0, 'subscribed_keys': 0, 'last_error': None}"
+    },
+    {
+      "name": "can_trade false when feed is stale",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "status=DEGRADED blockers=['Live feed is stale (122s > 120s)']"
+    },
+    {
+      "name": "can_trade false after real feed stop",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "feed=DISCONNECTED can_trade=False"
+    },
+    {
+      "name": "Recovery reconciles missing data before READY",
+      "status": "PASS \u2014 LIVE VERIFIED",
+      "evidence": "recovered_connected=True ticks=7 status=READY can_trade=True blockers=[]"
+    }
+  ],
+  "coverage": [
+    {
+      "instrument_key": "NSE_INDEX|Nifty 50",
+      "timeframe": "3m",
+      "provider": "upstox",
+      "requested_from": "2022-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2022-01-03T03:45:00+00:00",
+      "actual_latest": "2026-08-14T09:27:00+00:00",
+      "candle_count": 142693,
+      "chunks_completed": 61,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 0,
+      "gap_scan": {
+        "verifiable": true,
+        "reason": "",
+        "scanned_from": "2026-07-15T09:29:18.461574+00:00",
+        "scanned_to": "2026-08-14T09:29:18.461574+00:00",
+        "trading_days_checked": 22,
+        "suspicious_gap_count": 0,
+        "gaps": []
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:12:17.694503+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "NSE_INDEX|Nifty 50",
+      "timeframe": "5m",
+      "provider": "upstox",
+      "requested_from": "2022-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2022-01-03T03:45:00+00:00",
+      "actual_latest": "2026-08-14T09:25:00+00:00",
+      "candle_count": 85687,
+      "chunks_completed": 62,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 0,
+      "gap_scan": {
+        "verifiable": true,
+        "reason": "",
+        "scanned_from": "2026-07-15T09:29:18.472253+00:00",
+        "scanned_to": "2026-08-14T09:29:18.472253+00:00",
+        "trading_days_checked": 22,
+        "suspicious_gap_count": 0,
+        "gaps": []
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:12:50.817039+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "NSE_INDEX|Nifty 50",
+      "timeframe": "15m",
+      "provider": "upstox",
+      "requested_from": "2022-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2022-01-03T03:45:00+00:00",
+      "actual_latest": "2026-08-14T09:15:00+00:00",
+      "candle_count": 28597,
+      "chunks_completed": 61,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 0,
+      "gap_scan": {
+        "verifiable": true,
+        "reason": "",
+        "scanned_from": "2026-07-15T09:29:18.481028+00:00",
+        "scanned_to": "2026-08-14T09:29:18.481028+00:00",
+        "trading_days_checked": 22,
+        "suspicious_gap_count": 0,
+        "gaps": []
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:13:12.665303+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "NSE_INDEX|Nifty 50",
+      "timeframe": "1D",
+      "provider": "upstox",
+      "requested_from": "2000-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2000-01-02T18:30:00+00:00",
+      "actual_latest": "2026-08-13T18:30:00+00:00",
+      "candle_count": 6619,
+      "chunks_completed": 4,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 0,
+      "gap_scan": {
+        "verifiable": false,
+        "reason": "Gap scan applies to intraday timeframes only",
+        "scanned_from": null,
+        "scanned_to": null,
+        "trading_days_checked": 0,
+        "suspicious_gap_count": 0,
+        "gaps": []
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:11:34.644243+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "NSE_INDEX|Nifty Bank",
+      "timeframe": "3m",
+      "provider": "upstox",
+      "requested_from": "2022-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2022-01-03T03:45:00+00:00",
+      "actual_latest": "2026-08-14T09:12:00+00:00",
+      "candle_count": 142668,
+      "chunks_completed": 61,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 1,
+      "gap_scan": {
+        "verifiable": true,
+        "reason": "",
+        "scanned_from": "2026-07-15T09:29:18.485253+00:00",
+        "scanned_to": "2026-08-14T09:29:18.485253+00:00",
+        "trading_days_checked": 22,
+        "suspicious_gap_count": 1,
+        "gaps": [
+          {
+            "from": "2026-08-14T09:15:00+00:00",
+            "to": "2026-08-14T09:27:00+00:00",
+            "missing_candles": 4,
+            "classification": "SUSPICIOUS_GAP"
+          }
+        ]
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:13:58.012086+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "NSE_INDEX|Nifty Bank",
+      "timeframe": "5m",
+      "provider": "upstox",
+      "requested_from": "2022-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2022-01-03T03:45:00+00:00",
+      "actual_latest": "2026-08-14T09:10:00+00:00",
+      "candle_count": 85670,
+      "chunks_completed": 61,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 1,
+      "gap_scan": {
+        "verifiable": true,
+        "reason": "",
+        "scanned_from": "2026-07-15T09:29:18.495440+00:00",
+        "scanned_to": "2026-08-14T09:29:18.495440+00:00",
+        "trading_days_checked": 22,
+        "suspicious_gap_count": 1,
+        "gaps": [
+          {
+            "from": "2026-08-14T09:15:00+00:00",
+            "to": "2026-08-14T09:25:00+00:00",
+            "missing_candles": 2,
+            "classification": "SUSPICIOUS_GAP"
+          }
+        ]
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:14:30.908487+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "NSE_INDEX|Nifty Bank",
+      "timeframe": "15m",
+      "provider": "upstox",
+      "requested_from": "2022-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2022-01-03T03:45:00+00:00",
+      "actual_latest": "2026-08-14T09:00:00+00:00",
+      "candle_count": 28589,
+      "chunks_completed": 61,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 0,
+      "gap_scan": {
+        "verifiable": true,
+        "reason": "",
+        "scanned_from": "2026-07-15T09:29:18.502852+00:00",
+        "scanned_to": "2026-08-14T09:29:18.502852+00:00",
+        "trading_days_checked": 22,
+        "suspicious_gap_count": 0,
+        "gaps": []
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:15:19.747672+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "NSE_INDEX|Nifty Bank",
+      "timeframe": "1D",
+      "provider": "upstox",
+      "requested_from": "2000-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "1999-12-31T18:30:00+00:00",
+      "actual_latest": "2026-08-13T18:30:00+00:00",
+      "candle_count": 6610,
+      "chunks_completed": 3,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 0,
+      "gap_scan": {
+        "verifiable": false,
+        "reason": "Gap scan applies to intraday timeframes only",
+        "scanned_from": null,
+        "scanned_to": null,
+        "trading_days_checked": 0,
+        "suspicious_gap_count": 0,
+        "gaps": []
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:13:14.986103+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "BSE_INDEX|SENSEX",
+      "timeframe": "3m",
+      "provider": "upstox",
+      "requested_from": "2022-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2022-01-03T03:45:00+00:00",
+      "actual_latest": "2026-08-14T09:15:00+00:00",
+      "candle_count": 142610,
+      "chunks_completed": 61,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 1,
+      "gap_scan": {
+        "verifiable": true,
+        "reason": "",
+        "scanned_from": "2026-07-15T09:29:18.506698+00:00",
+        "scanned_to": "2026-08-14T09:29:18.506698+00:00",
+        "trading_days_checked": 22,
+        "suspicious_gap_count": 1,
+        "gaps": [
+          {
+            "from": "2026-08-14T09:18:00+00:00",
+            "to": "2026-08-14T09:27:00+00:00",
+            "missing_candles": 3,
+            "classification": "SUSPICIOUS_GAP"
+          }
+        ]
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:16:24.783820+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "BSE_INDEX|SENSEX",
+      "timeframe": "5m",
+      "provider": "upstox",
+      "requested_from": "2022-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2022-01-03T03:45:00+00:00",
+      "actual_latest": "2026-08-14T09:15:00+00:00",
+      "candle_count": 85605,
+      "chunks_completed": 61,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 1,
+      "gap_scan": {
+        "verifiable": true,
+        "reason": "",
+        "scanned_from": "2026-07-15T09:29:18.517673+00:00",
+        "scanned_to": "2026-08-14T09:29:18.517673+00:00",
+        "trading_days_checked": 22,
+        "suspicious_gap_count": 1,
+        "gaps": [
+          {
+            "from": "2026-08-14T09:20:00+00:00",
+            "to": "2026-08-14T09:25:00+00:00",
+            "missing_candles": 1,
+            "classification": "SUSPICIOUS_GAP"
+          }
+        ]
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:17:04.771233+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "BSE_INDEX|SENSEX",
+      "timeframe": "15m",
+      "provider": "upstox",
+      "requested_from": "2022-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2022-01-03T03:45:00+00:00",
+      "actual_latest": "2026-08-14T09:15:00+00:00",
+      "candle_count": 28595,
+      "chunks_completed": 61,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 0,
+      "gap_scan": {
+        "verifiable": true,
+        "reason": "",
+        "scanned_from": "2026-07-15T09:29:18.524145+00:00",
+        "scanned_to": "2026-08-14T09:29:18.524145+00:00",
+        "trading_days_checked": 22,
+        "suspicious_gap_count": 0,
+        "gaps": []
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:17:29.673992+00:00",
+      "last_error": null
+    },
+    {
+      "instrument_key": "BSE_INDEX|SENSEX",
+      "timeframe": "1D",
+      "provider": "upstox",
+      "requested_from": "2000-01-01T00:00:00+00:00",
+      "requested_to": "2026-08-13T00:00:00+00:00",
+      "actual_earliest": "2000-01-02T18:30:00+00:00",
+      "actual_latest": "2026-08-13T18:30:00+00:00",
+      "candle_count": 6619,
+      "chunks_completed": 3,
+      "chunks_failed": 0,
+      "suspicious_gap_count": 0,
+      "gap_scan": {
+        "verifiable": false,
+        "reason": "Gap scan applies to intraday timeframes only",
+        "scanned_from": null,
+        "scanned_to": null,
+        "trading_days_checked": 0,
+        "suspicious_gap_count": 0,
+        "gaps": []
+      },
+      "sync_status": "COMPLETE",
+      "last_successful_sync": "2026-08-14T09:15:26.194720+00:00",
+      "last_error": null
+    }
+  ],
+  "ticks_received": 3,
+  "last_ltp": 24377.15,
+  "feed_transitions": [
+    "DISCONNECTED",
+    "CONNECTED"
+  ],
+  "candle_snapshots": {
+    "after_ticks": {
+      "3m": {
+        "timestamp": "2026-08-14T09:27:00+00:00",
+        "ist": "14:57:00",
+        "open": 24379.25,
+        "high": 24383.1,
+        "low": 24375.6,
+        "close": 24377.15,
+        "is_closed": false,
+        "source": "websocket"
+      },
+      "5m": {
+        "timestamp": "2026-08-14T09:25:00+00:00",
+        "ist": "14:55:00",
+        "open": 24380.9,
+        "high": 24384.4,
+        "low": 24375.6,
+        "close": 24377.15,
+        "is_closed": false,
+        "source": "websocket"
+      },
+      "15m": {
+        "timestamp": "2026-08-14T09:15:00+00:00",
+        "ist": "14:45:00",
+        "open": 24370.0,
+        "high": 24384.4,
+        "low": 24364.75,
+        "close": 24377.15,
+        "is_closed": false,
+        "source": "websocket"
+      }
+    }
+  },
+  "readiness_before_ws": {
+    "status": "DEGRADED",
+    "can_trade": false,
+    "reason": "WebSocket feed is DISCONNECTED",
+    "session_phase": "OPEN",
+    "flags": {
+      "historical_coverage_ready": true,
+      "today_session_ready": true,
+      "required_indicators_ready": true,
+      "market_structure_ready": true,
+      "no_critical_data_gaps": true,
+      "websocket_connected": false,
+      "live_data_fresh": false,
+      "market_open": true,
+      "3m_ready": true,
+      "3m_ema9_ready": true,
+      "3m_ema21_ready": true,
+      "3m_ema50_ready": true,
+      "3m_ema200_ready": true,
+      "3m_rsi_ready": true,
+      "3m_atr_ready": true,
+      "3m_vwap_ready": false,
+      "3m_structure_ready": true,
+      "5m_ready": true,
+      "5m_ema9_ready": true,
+      "5m_ema21_ready": true,
+      "5m_ema50_ready": true,
+      "5m_ema200_ready": true,
+      "5m_rsi_ready": true,
+      "5m_atr_ready": true,
+      "5m_vwap_ready": false,
+      "5m_structure_ready": true,
+      "15m_ready": true,
+      "15m_ema9_ready": true,
+      "15m_ema21_ready": true,
+      "15m_ema50_ready": true,
+      "15m_ema200_ready": true,
+      "15m_rsi_ready": true,
+      "15m_atr_ready": true,
+      "15m_vwap_ready": false,
+      "15m_structure_ready": true,
+      "ema9_ready": true,
+      "ema21_ready": true,
+      "ema50_ready": true,
+      "ema200_ready": true,
+      "rsi_ready": true,
+      "atr_ready": true,
+      "vwap_ready": false,
+      "structure_ready": true
+    },
+    "blockers": [
+      "WebSocket feed is DISCONNECTED"
+    ],
+    "timeframes": {
+      "3m": {
+        "timeframe": "3m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 142693,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 140.056582,
+        "indicators": {
+          "ema9": {
+            "value": 24375.359755042256,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24373.67454448168,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24364.36460773621,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24354.306616184018,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 55.40290783128146,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 8.373989882537284,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      },
+      "5m": {
+        "timeframe": "5m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 85687,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 260.106938,
+        "indicators": {
+          "ema9": {
+            "value": 24374.82387289925,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24369.14536162718,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24357.821806452117,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24366.525318923486,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 57.22967496147415,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 11.077185146854642,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      },
+      "15m": {
+        "timeframe": "15m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 28597,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 860.141303,
+        "indicators": {
+          "ema9": {
+            "value": 24366.286650422153,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24356.018916546716,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24358.198109136156,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24411.236272210583,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 60.17680289513568,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 23.2919797542926,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      }
+    },
+    "websocket": {
+      "status": "DISCONNECTED",
+      "connected": false,
+      "data_fresh": false,
+      "staleness_seconds": null,
+      "stale_after_seconds": 120.0,
+      "last_message_at": null,
+      "last_connected_at": null,
+      "last_successful_reconnect": null,
+      "reconnect_count": 0,
+      "disconnect_count": 0,
+      "subscribed_keys": 0,
+      "last_error": null
+    }
+  },
+  "readiness_after_live": {
+    "status": "READY",
+    "can_trade": true,
+    "reason": "All critical requirements satisfied",
+    "session_phase": "OPEN",
+    "flags": {
+      "historical_coverage_ready": true,
+      "today_session_ready": true,
+      "required_indicators_ready": true,
+      "market_structure_ready": true,
+      "no_critical_data_gaps": true,
+      "websocket_connected": true,
+      "live_data_fresh": true,
+      "market_open": true,
+      "3m_ready": true,
+      "3m_ema9_ready": true,
+      "3m_ema21_ready": true,
+      "3m_ema50_ready": true,
+      "3m_ema200_ready": true,
+      "3m_rsi_ready": true,
+      "3m_atr_ready": true,
+      "3m_vwap_ready": false,
+      "3m_structure_ready": true,
+      "5m_ready": true,
+      "5m_ema9_ready": true,
+      "5m_ema21_ready": true,
+      "5m_ema50_ready": true,
+      "5m_ema200_ready": true,
+      "5m_rsi_ready": true,
+      "5m_atr_ready": true,
+      "5m_vwap_ready": false,
+      "5m_structure_ready": true,
+      "15m_ready": true,
+      "15m_ema9_ready": true,
+      "15m_ema21_ready": true,
+      "15m_ema50_ready": true,
+      "15m_ema200_ready": true,
+      "15m_rsi_ready": true,
+      "15m_atr_ready": true,
+      "15m_vwap_ready": false,
+      "15m_structure_ready": true,
+      "ema9_ready": true,
+      "ema21_ready": true,
+      "ema50_ready": true,
+      "ema200_ready": true,
+      "rsi_ready": true,
+      "atr_ready": true,
+      "vwap_ready": false,
+      "structure_ready": true
+    },
+    "blockers": [],
+    "timeframes": {
+      "3m": {
+        "timeframe": "3m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 142693,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 142.509288,
+        "indicators": {
+          "ema9": {
+            "value": 24375.239755042257,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24373.619999027134,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24364.341078324447,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24354.300646034764,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 54.41493868778094,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 8.373989882537284,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      },
+      "5m": {
+        "timeframe": "5m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 85687,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 262.556662,
+        "indicators": {
+          "ema9": {
+            "value": 24374.703872899252,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24369.090816172633,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24357.798277040354,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24366.519348774233,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 56.54401085340599,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 11.077185146854642,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      },
+      "15m": {
+        "timeframe": "15m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 28597,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 862.590206,
+        "indicators": {
+          "ema9": {
+            "value": 24366.166650422154,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24355.96437109217,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24358.174579724393,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24411.23030206133,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 59.956061049960226,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 23.2919797542926,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      }
+    },
+    "websocket": {
+      "status": "CONNECTED",
+      "connected": true,
+      "data_fresh": true,
+      "staleness_seconds": 0.61409,
+      "stale_after_seconds": 120.0,
+      "last_message_at": "2026-08-14T09:29:21.895169+00:00",
+      "last_connected_at": "2026-08-14T09:29:21.364976+00:00",
+      "last_successful_reconnect": null,
+      "reconnect_count": 0,
+      "disconnect_count": 0,
+      "subscribed_keys": 1,
+      "last_error": null
+    }
+  },
+  "readiness_stale": {
+    "status": "DEGRADED",
+    "can_trade": false,
+    "reason": "Live feed is stale (122s > 120s)",
+    "session_phase": "OPEN",
+    "flags": {
+      "historical_coverage_ready": true,
+      "today_session_ready": true,
+      "required_indicators_ready": true,
+      "market_structure_ready": true,
+      "no_critical_data_gaps": true,
+      "websocket_connected": true,
+      "live_data_fresh": false,
+      "market_open": true,
+      "3m_ready": true,
+      "3m_ema9_ready": true,
+      "3m_ema21_ready": true,
+      "3m_ema50_ready": true,
+      "3m_ema200_ready": true,
+      "3m_rsi_ready": true,
+      "3m_atr_ready": true,
+      "3m_vwap_ready": false,
+      "3m_structure_ready": true,
+      "5m_ready": true,
+      "5m_ema9_ready": true,
+      "5m_ema21_ready": true,
+      "5m_ema50_ready": true,
+      "5m_ema200_ready": true,
+      "5m_rsi_ready": true,
+      "5m_atr_ready": true,
+      "5m_vwap_ready": false,
+      "5m_structure_ready": true,
+      "15m_ready": true,
+      "15m_ema9_ready": true,
+      "15m_ema21_ready": true,
+      "15m_ema50_ready": true,
+      "15m_ema200_ready": true,
+      "15m_rsi_ready": true,
+      "15m_atr_ready": true,
+      "15m_vwap_ready": false,
+      "15m_structure_ready": true,
+      "ema9_ready": true,
+      "ema21_ready": true,
+      "ema50_ready": true,
+      "ema200_ready": true,
+      "rsi_ready": true,
+      "atr_ready": true,
+      "vwap_ready": false,
+      "structure_ready": true
+    },
+    "blockers": [
+      "Live feed is stale (122s > 120s)"
+    ],
+    "timeframes": {
+      "3m": {
+        "timeframe": "3m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 142693,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 269.650872,
+        "indicators": {
+          "ema9": {
+            "value": 24375.15975504226,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24373.583635390773,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24364.325392049937,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24354.29666593526,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 53.77563805477344,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 8.373989882537284,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      },
+      "5m": {
+        "timeframe": "5m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 85687,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 389.713412,
+        "indicators": {
+          "ema9": {
+            "value": 24374.623872899254,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24369.05445253627,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24357.782590765844,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24366.51536867473,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 56.09595677199425,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 11.077185146854642,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      },
+      "15m": {
+        "timeframe": "15m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 28597,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 989.758443,
+        "indicators": {
+          "ema9": {
+            "value": 24366.086650422156,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24355.928007455805,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24358.158893449883,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24411.226321961825,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 59.80753524125152,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 23.2919797542926,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      }
+    },
+    "websocket": {
+      "status": "DEGRADED",
+      "connected": true,
+      "data_fresh": false,
+      "staleness_seconds": 122.01342,
+      "stale_after_seconds": 120.0,
+      "last_message_at": "2026-08-14T09:29:27.637346+00:00",
+      "last_connected_at": null,
+      "last_successful_reconnect": null,
+      "reconnect_count": 0,
+      "disconnect_count": 0,
+      "subscribed_keys": 0,
+      "last_error": null
+    }
+  },
+  "readiness_after_recover": {
+    "status": "READY",
+    "can_trade": true,
+    "reason": "All critical requirements satisfied",
+    "session_phase": "OPEN",
+    "flags": {
+      "historical_coverage_ready": true,
+      "today_session_ready": true,
+      "required_indicators_ready": true,
+      "market_structure_ready": true,
+      "no_critical_data_gaps": true,
+      "websocket_connected": true,
+      "live_data_fresh": true,
+      "market_open": true,
+      "3m_ready": true,
+      "3m_ema9_ready": true,
+      "3m_ema21_ready": true,
+      "3m_ema50_ready": true,
+      "3m_ema200_ready": true,
+      "3m_rsi_ready": true,
+      "3m_atr_ready": true,
+      "3m_vwap_ready": false,
+      "3m_structure_ready": true,
+      "5m_ready": true,
+      "5m_ema9_ready": true,
+      "5m_ema21_ready": true,
+      "5m_ema50_ready": true,
+      "5m_ema200_ready": true,
+      "5m_rsi_ready": true,
+      "5m_atr_ready": true,
+      "5m_vwap_ready": false,
+      "5m_structure_ready": true,
+      "15m_ready": true,
+      "15m_ema9_ready": true,
+      "15m_ema21_ready": true,
+      "15m_ema50_ready": true,
+      "15m_ema200_ready": true,
+      "15m_rsi_ready": true,
+      "15m_atr_ready": true,
+      "15m_vwap_ready": false,
+      "15m_structure_ready": true,
+      "ema9_ready": true,
+      "ema21_ready": true,
+      "ema50_ready": true,
+      "ema200_ready": true,
+      "rsi_ready": true,
+      "atr_ready": true,
+      "vwap_ready": false,
+      "structure_ready": true
+    },
+    "blockers": [],
+    "timeframes": {
+      "3m": {
+        "timeframe": "3m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 142694,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 92.615969,
+        "indicators": {
+          "ema9": {
+            "value": 24375.70380403381,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24373.95289167756,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24364.843388978512,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24354.5318588787,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 57.228270579914856,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 8.57176611541698,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      },
+      "5m": {
+        "timeframe": "5m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 85688,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 92.666278,
+        "indicators": {
+          "ema9": {
+            "value": 24375.275098319406,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24369.835452718922,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24358.557168137886,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24366.641224784427,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 58.26495064687269,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 11.0675902894259,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      },
+      "15m": {
+        "timeframe": "15m",
+        "ready": true,
+        "coverage_status": "COMPLETE",
+        "history_ready": true,
+        "today_ready": true,
+        "today_missing_candles": 0,
+        "active_bars": 600,
+        "stored_candles": 28598,
+        "suspicious_gap_count": 0,
+        "data_age_seconds": 92.702695,
+        "indicators": {
+          "ema9": {
+            "value": 24367.985320337724,
+            "status": "READY",
+            "required_bars": 18,
+            "available_bars": 600
+          },
+          "ema21": {
+            "value": 24357.693229918503,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "ema50": {
+            "value": 24358.828517774113,
+            "status": "READY",
+            "required_bars": 100,
+            "available_bars": 600
+          },
+          "ema200": {
+            "value": 24410.881706859363,
+            "status": "READY",
+            "required_bars": 400,
+            "available_bars": 600
+          },
+          "rsi": {
+            "value": 60.13559936853932,
+            "status": "READY",
+            "required_bars": 27,
+            "available_bars": 600
+          },
+          "atr": {
+            "value": 22.221124057557365,
+            "status": "READY",
+            "required_bars": 42,
+            "available_bars": 600
+          },
+          "vwap": {
+            "value": null,
+            "status": "UNAVAILABLE",
+            "required_bars": 1,
+            "available_bars": 600
+          }
+        },
+        "ema9_ready": true,
+        "ema21_ready": true,
+        "ema50_ready": true,
+        "ema200_ready": true,
+        "rsi_ready": true,
+        "atr_ready": true,
+        "vwap_ready": false,
+        "structure_ready": true
+      }
+    },
+    "websocket": {
+      "status": "CONNECTED",
+      "connected": true,
+      "data_fresh": true,
+      "staleness_seconds": 0.199977,
+      "stale_after_seconds": 120.0,
+      "last_message_at": "2026-08-14T09:31:32.415964+00:00",
+      "last_connected_at": "2026-08-14T09:31:30.982564+00:00",
+      "last_successful_reconnect": null,
+      "reconnect_count": 0,
+      "disconnect_count": 0,
+      "subscribed_keys": 1,
+      "last_error": null
+    }
+  },
+  "reconnect": {
+    "reconnected": true,
+    "reconnect_count": 1,
+    "backfill_calls": [
+      {
+        "3m": 115,
+        "5m": 69,
+        "15m": 23
+      }
+    ],
+    "configured_backfill_timeframes": [
+      "3m",
+      "5m",
+      "15m"
+    ],
+    "gaps_before": {
+      "3m": 0,
+      "5m": 0,
+      "15m": 0,
+      "1D": 0
+    },
+    "gaps_after": {
+      "3m": 0,
+      "5m": 0,
+      "15m": 0,
+      "1D": 0
+    },
+    "candle_counts_before": {
+      "3m": 142693,
+      "5m": 85687,
+      "15m": 28597
+    },
+    "candle_counts_after": {
+      "3m": 142693,
+      "5m": 85687,
+      "15m": 28597
+    }
+  },
+  "bootstrap": {
+    "after_connect": {
+      "status": "TODAY_LOADING",
+      "can_trade": false,
+      "websocket": {
+        "status": "CONNECTED",
+        "connected": true,
+        "data_fresh": true,
+        "staleness_seconds": 0.214871,
+        "stale_after_seconds": 120.0,
+        "last_message_at": "2026-08-14T09:29:21.895169+00:00",
+        "last_connected_at": "2026-08-14T09:29:21.364976+00:00",
+        "last_successful_reconnect": null,
+        "reconnect_count": 0,
+        "disconnect_count": 0,
+        "subscribed_keys": 1,
+        "last_error": null
+      },
+      "market_session": "OPEN",
+      "data_quality": {
+        "overall_status": "TODAY_LOADING",
+        "series_count": 12,
+        "series_complete": 12,
+        "series_partial": 0,
+        "series_failed": 0,
+        "series_pending": 0,
+        "suspicious_gap_total": 0
+      }
+    },
+    "final": {
+      "status": "TODAY_LOADING",
+      "can_trade": false,
+      "websocket": {
+        "status": "CONNECTED",
+        "connected": true,
+        "data_fresh": true,
+        "staleness_seconds": 0.199977,
+        "stale_after_seconds": 120.0,
+        "last_message_at": "2026-08-14T09:31:32.415964+00:00",
+        "last_connected_at": "2026-08-14T09:31:30.982564+00:00",
+        "last_successful_reconnect": null,
+        "reconnect_count": 0,
+        "disconnect_count": 0,
+        "subscribed_keys": 1,
+        "last_error": null
+      },
+      "market_session": "OPEN",
+      "data_quality": {
+        "overall_status": "TODAY_LOADING",
+        "series_count": 12,
+        "series_complete": 12,
+        "series_partial": 0,
+        "series_failed": 0,
+        "series_pending": 0,
+        "suspicious_gap_total": 0
+      },
+      "readiness_nifty": {
+        "status": "READY",
+        "can_trade": true,
+        "reason": "All critical requirements satisfied",
+        "session_phase": "OPEN",
+        "flags": {
+          "historical_coverage_ready": true,
+          "today_session_ready": true,
+          "required_indicators_ready": true,
+          "market_structure_ready": true,
+          "no_critical_data_gaps": true,
+          "websocket_connected": true,
+          "live_data_fresh": true,
+          "market_open": true,
+          "3m_ready": true,
+          "3m_ema9_ready": true,
+          "3m_ema21_ready": true,
+          "3m_ema50_ready": true,
+          "3m_ema200_ready": true,
+          "3m_rsi_ready": true,
+          "3m_atr_ready": true,
+          "3m_vwap_ready": false,
+          "3m_structure_ready": true,
+          "5m_ready": true,
+          "5m_ema9_ready": true,
+          "5m_ema21_ready": true,
+          "5m_ema50_ready": true,
+          "5m_ema200_ready": true,
+          "5m_rsi_ready": true,
+          "5m_atr_ready": true,
+          "5m_vwap_ready": false,
+          "5m_structure_ready": true,
+          "15m_ready": true,
+          "15m_ema9_ready": true,
+          "15m_ema21_ready": true,
+          "15m_ema50_ready": true,
+          "15m_ema200_ready": true,
+          "15m_rsi_ready": true,
+          "15m_atr_ready": true,
+          "15m_vwap_ready": false,
+          "15m_structure_ready": true,
+          "ema9_ready": true,
+          "ema21_ready": true,
+          "ema50_ready": true,
+          "ema200_ready": true,
+          "rsi_ready": true,
+          "atr_ready": true,
+          "vwap_ready": false,
+          "structure_ready": true
+        },
+        "blockers": [],
+        "timeframes": {
+          "3m": {
+            "timeframe": "3m",
+            "ready": true,
+            "coverage_status": "COMPLETE",
+            "history_ready": true,
+            "today_ready": true,
+            "today_missing_candles": 0,
+            "active_bars": 600,
+            "stored_candles": 142694,
+            "suspicious_gap_count": 0,
+            "data_age_seconds": 92.724201,
+            "indicators": {
+              "ema9": {
+                "value": 24375.70380403381,
+                "status": "READY",
+                "required_bars": 18,
+                "available_bars": 600
+              },
+              "ema21": {
+                "value": 24373.95289167756,
+                "status": "READY",
+                "required_bars": 42,
+                "available_bars": 600
+              },
+              "ema50": {
+                "value": 24364.843388978512,
+                "status": "READY",
+                "required_bars": 100,
+                "available_bars": 600
+              },
+              "ema200": {
+                "value": 24354.5318588787,
+                "status": "READY",
+                "required_bars": 400,
+                "available_bars": 600
+              },
+              "rsi": {
+                "value": 57.228270579914856,
+                "status": "READY",
+                "required_bars": 27,
+                "available_bars": 600
+              },
+              "atr": {
+                "value": 8.57176611541698,
+                "status": "READY",
+                "required_bars": 42,
+                "available_bars": 600
+              },
+              "vwap": {
+                "value": null,
+                "status": "UNAVAILABLE",
+                "required_bars": 1,
+                "available_bars": 600
+              }
+            },
+            "ema9_ready": true,
+            "ema21_ready": true,
+            "ema50_ready": true,
+            "ema200_ready": true,
+            "rsi_ready": true,
+            "atr_ready": true,
+            "vwap_ready": false,
+            "structure_ready": true
+          },
+          "5m": {
+            "timeframe": "5m",
+            "ready": true,
+            "coverage_status": "COMPLETE",
+            "history_ready": true,
+            "today_ready": true,
+            "today_missing_candles": 0,
+            "active_bars": 600,
+            "stored_candles": 85688,
+            "suspicious_gap_count": 0,
+            "data_age_seconds": 92.724201,
+            "indicators": {
+              "ema9": {
+                "value": 24375.275098319406,
+                "status": "READY",
+                "required_bars": 18,
+                "available_bars": 600
+              },
+              "ema21": {
+                "value": 24369.835452718922,
+                "status": "READY",
+                "required_bars": 42,
+                "available_bars": 600
+              },
+              "ema50": {
+                "value": 24358.557168137886,
+                "status": "READY",
+                "required_bars": 100,
+                "available_bars": 600
+              },
+              "ema200": {
+                "value": 24366.641224784427,
+                "status": "READY",
+                "required_bars": 400,
+                "available_bars": 600
+              },
+              "rsi": {
+                "value": 58.26495064687269,
+                "status": "READY",
+                "required_bars": 27,
+                "available_bars": 600
+              },
+              "atr": {
+                "value": 11.0675902894259,
+                "status": "READY",
+                "required_bars": 42,
+                "available_bars": 600
+              },
+              "vwap": {
+                "value": null,
+                "status": "UNAVAILABLE",
+                "required_bars": 1,
+                "available_bars": 600
+              }
+            },
+            "ema9_ready": true,
+            "ema21_ready": true,
+            "ema50_ready": true,
+            "ema200_ready": true,
+            "rsi_ready": true,
+            "atr_ready": true,
+            "vwap_ready": false,
+            "structure_ready": true
+          },
+          "15m": {
+            "timeframe": "15m",
+            "ready": true,
+            "coverage_status": "COMPLETE",
+            "history_ready": true,
+            "today_ready": true,
+            "today_missing_candles": 0,
+            "active_bars": 600,
+            "stored_candles": 28598,
+            "suspicious_gap_count": 0,
+            "data_age_seconds": 92.724201,
+            "indicators": {
+              "ema9": {
+                "value": 24367.985320337724,
+                "status": "READY",
+                "required_bars": 18,
+                "available_bars": 600
+              },
+              "ema21": {
+                "value": 24357.693229918503,
+                "status": "READY",
+                "required_bars": 42,
+                "available_bars": 600
+              },
+              "ema50": {
+                "value": 24358.828517774113,
+                "status": "READY",
+                "required_bars": 100,
+                "available_bars": 600
+              },
+              "ema200": {
+                "value": 24410.881706859363,
+                "status": "READY",
+                "required_bars": 400,
+                "available_bars": 600
+              },
+              "rsi": {
+                "value": 60.13559936853932,
+                "status": "READY",
+                "required_bars": 27,
+                "available_bars": 600
+              },
+              "atr": {
+                "value": 22.221124057557365,
+                "status": "READY",
+                "required_bars": 42,
+                "available_bars": 600
+              },
+              "vwap": {
+                "value": null,
+                "status": "UNAVAILABLE",
+                "required_bars": 1,
+                "available_bars": 600
+              }
+            },
+            "ema9_ready": true,
+            "ema21_ready": true,
+            "ema50_ready": true,
+            "ema200_ready": true,
+            "rsi_ready": true,
+            "atr_ready": true,
+            "vwap_ready": false,
+            "structure_ready": true
+          }
+        },
+        "websocket": {
+          "status": "CONNECTED",
+          "connected": true,
+          "data_fresh": true,
+          "staleness_seconds": 0.199977,
+          "stale_after_seconds": 120.0,
+          "last_message_at": "2026-08-14T09:31:32.415964+00:00",
+          "last_connected_at": "2026-08-14T09:31:30.982564+00:00",
+          "last_successful_reconnect": null,
+          "reconnect_count": 0,
+          "disconnect_count": 0,
+          "subscribed_keys": 1,
+          "last_error": null
+        }
+      }
+    }
+  },
+  "duplicates": {
+    "before": 0,
+    "after": 0
+  },
+  "notes": [],
+  "summary": {
+    "live_verified": 37,
+    "fail": 0,
+    "not_verified": 0,
+    "unit_only": 0,
+    "total": 37
+  }
+}

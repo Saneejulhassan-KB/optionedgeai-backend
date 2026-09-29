@@ -1,0 +1,70 @@
+﻿.\.venv\Scripts\python.exe : historical_hole_detected instrument=NSE_INDEX|Nifty Bank timeframe=3m gaps=1
+At C:\Users\ASUS\AppData\Local\Temp\ps-script-74cfd4a7-f95b-487f-8ec6-f4d2fa5ef0cb.ps1:114 char:32
++ ... NG='utf-8'; .\.venv\Scripts\python.exe -m scripts.verify_live_market  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (historical_hole...frame=3m gaps=1:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+historical_hole_detected instrument=NSE_INDEX|Nifty Bank timeframe=5m gaps=1
+historical_hole_detected instrument=BSE_INDEX|SENSEX timeframe=3m gaps=1
+historical_hole_detected instrument=BSE_INDEX|SENSEX timeframe=5m gaps=1
+[PASS ΓÇö LIVE VERIFIED] Corrected SQLite schema -- candles.id=INTEGER; coverage cols ok; historical_chunks present
+[PASS ΓÇö LIVE VERIFIED] 12 configured series COMPLETE -- complete=12/12
+[PASS ΓÇö LIVE VERIFIED] Coverage NSE_INDEX|Nifty 50 3m -- status=COMPLETE count=142693 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:27:00+00:00 gaps=0
+[PASS ΓÇö LIVE VERIFIED] Coverage NSE_INDEX|Nifty 50 5m -- status=COMPLETE count=85687 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:25:00+00:00 gaps=0
+[PASS ΓÇö LIVE VERIFIED] Coverage NSE_INDEX|Nifty 50 15m -- status=COMPLETE count=28597 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:15:00+00:00 gaps=0
+[PASS ΓÇö LIVE VERIFIED] Coverage NSE_INDEX|Nifty 50 1D -- status=COMPLETE count=6619 earliest=2000-01-02T18:30:00+00:00 latest=2026-08-13T18:30:00+00:00 gaps=0
+[PASS ΓÇö LIVE VERIFIED] Coverage NSE_INDEX|Nifty Bank 3m -- status=COMPLETE count=142668 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:12:00+00:00 gaps=1
+[PASS ΓÇö LIVE VERIFIED] Coverage NSE_INDEX|Nifty Bank 5m -- status=COMPLETE count=85670 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:10:00+00:00 gaps=1
+[PASS ΓÇö LIVE VERIFIED] Coverage NSE_INDEX|Nifty Bank 15m -- status=COMPLETE count=28589 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:00:00+00:00 gaps=0
+[PASS ΓÇö LIVE VERIFIED] Coverage NSE_INDEX|Nifty Bank 1D -- status=COMPLETE count=6610 earliest=1999-12-31T18:30:00+00:00 latest=2026-08-13T18:30:00+00:00 gaps=0
+[PASS ΓÇö LIVE VERIFIED] Coverage BSE_INDEX|SENSEX 3m -- status=COMPLETE count=142610 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:15:00+00:00 gaps=1
+[PASS ΓÇö LIVE VERIFIED] Coverage BSE_INDEX|SENSEX 5m -- status=COMPLETE count=85605 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:15:00+00:00 gaps=1
+[PASS ΓÇö LIVE VERIFIED] Coverage BSE_INDEX|SENSEX 15m -- status=COMPLETE count=28595 earliest=2022-01-03T03:45:00+00:00 latest=2026-08-14T09:15:00+00:00 gaps=0
+[PASS ΓÇö LIVE VERIFIED] Coverage BSE_INDEX|SENSEX 1D -- status=COMPLETE count=6619 earliest=2000-01-02T18:30:00+00:00 latest=2026-08-13T18:30:00+00:00 gaps=0
+
+--- Today's session sync ---
+[PASS ΓÇö LIVE VERIFIED] Today's market synchronization -- upserted={'3m': 115, '5m': 69, '15m': 23, '1D': 1}
+[PASS ΓÇö LIVE VERIFIED] can_trade false while WS disconnected -- status=DEGRADED blockers=['WebSocket feed is DISCONNECTED']
+
+--- Connecting real Upstox WebSocket ---
+[PASS ΓÇö LIVE VERIFIED] Feed starts DISCONNECTED -- DISCONNECTED
+[PASS ΓÇö LIVE VERIFIED] Feed transition to CONNECTED -- status=CONNECTED transitions_observed=['DISCONNECTED', 'CONNECTED']
+Waiting for real ticksΓÇª
+[PASS ΓÇö LIVE VERIFIED] Real ticks received -- ticks=3 last_ltp=24377.15
+[PASS ΓÇö LIVE VERIFIED] last_message_at updates -- 2026-08-14T09:29:21.895169+00:00
+[PASS ΓÇö LIVE VERIFIED] 3m candle updated from live path -- {'timestamp': '2026-08-14T09:27:00+00:00', 'ist': '14:57:00', 'open': 24379.25, 'high': 24383.1, 'low': 24375.6, 'close': 24377.15, 'is_closed': False, 'source': 'websocket'}
+[PASS ΓÇö LIVE VERIFIED] 5m candle updated from live path -- {'timestamp': '2026-08-14T09:25:00+00:00', 'ist': '14:55:00', 'open': 24380.9, 'high': 24384.4, 'low': 24375.6, 'close': 24377.15, 'is_closed': False, 'source': 'websocket'}
+[PASS ΓÇö LIVE VERIFIED] 15m candle updated from live path -- {'timestamp': '2026-08-14T09:15:00+00:00', 'ist': '14:45:00', 'open': 24370.0, 'high': 24384.4, 'low': 24364.75, 'close': 24377.15, 'is_closed': False, 'source': 'websocket'}
+[PASS ΓÇö LIVE VERIFIED] Live ticks reached canonical reconciler -- forming_snapshot={'3m': 'websocket', '5m': 'websocket', '15m': 'websocket'}
+[PASS ΓÇö LIVE VERIFIED] Indicators update from candles -- ema200=READY rsi=READY atr=READY price=24377.15
+[PASS ΓÇö LIVE VERIFIED] MarketState updates -- trend=up structure=UP
+[PASS ΓÇö LIVE VERIFIED] Bootstrap reflects actual WebSocket state -- websocket=CONNECTED connected=True
+[PASS ΓÇö LIVE VERIFIED] can_trade only when all requirements satisfied (post-connect) -- can_trade=True status=READY blockers=[]
+[PASS ΓÇö LIVE VERIFIED] Completed candles FORMING->CLOSED / boundary integrity -- 3m: last_closed=14:54 current_open=14:57 forming_closed=False; 5m: last_closed=14:50 current_open=14:55 forming_closed=False; 15m: last_closed=14:30 current_open=14:45 forming_closed=False
+
+--- Intentional disconnect/reconnect ---
+on_reconnected ΓåÆ backfill 3m/5m/15m
+[PASS ΓÇö LIVE VERIFIED] Intentional disconnect/reconnect -- reconnect_count=1 status=CONNECTED
+[PASS ΓÇö LIVE VERIFIED] Reconnect backfills 3m, 5m, 15m -- backfill_calls=[{'3m': 115, '5m': 69, '15m': 23}]
+[PASS ΓÇö LIVE VERIFIED] No duplicate candles after reconnect -- duplicates before=0 after=0
+[PASS ΓÇö LIVE VERIFIED] No new coverage gaps introduced by reconnect -- before={'3m': 0, '5m': 0, '15m': 0, '1D': 0} after={'3m': 0, '5m': 0, '15m': 0, '1D': 0}
+
+--- Stale feed check (stopping feed, waiting threshold) ---
+Waiting 122s for real message age to exceed stale thresholdΓÇª
+[PASS ΓÇö LIVE VERIFIED] Feed silent beyond DATA_STALE_THRESHOLD becomes DEGRADED -- snap={'status': 'DEGRADED', 'connected': True, 'data_fresh': False, 'staleness_seconds': 122.01342, 'stale_after_seconds': 120.0, 'last_message_at': '2026-08-14T09:29:27.637346+00:00', 'last_connected_at': None, 'last_successful_reconnect': None, 'reconnect_count': 0, 'disconnect_count': 0, 'subscribed_keys': 0, 'last_error': None}
+[PASS ΓÇö LIVE VERIFIED] can_trade false when feed is stale -- status=DEGRADED blockers=['Live feed is stale (122s > 120s)']
+[PASS ΓÇö LIVE VERIFIED] can_trade false after real feed stop -- feed=DISCONNECTED can_trade=False
+
+--- Recovery ---
+[PASS ΓÇö LIVE VERIFIED] Recovery reconciles missing data before READY -- recovered_connected=True ticks=7 status=READY can_trade=True blockers=[]
+
+=== SUMMARY ===
+{
+  "live_verified": 37,
+  "fail": 0,
+  "not_verified": 0,
+  "unit_only": 0,
+  "total": 37
+}
+Report written to live_market_verification_report.json

@@ -1,0 +1,57 @@
+# =============================================================================
+# OptionEdgeAI Backend — Python Dependencies
+# =============================================================================
+# Install with:  pip install -r requirements.txt
+# Each line is a package pip will download into your virtual environment.
+# Pinning versions keeps every developer (and production) on the same stack.
+# =============================================================================
+
+# Web framework — defines HTTP routes, validation, OpenAPI docs
+fastapi==0.115.6
+
+# ASGI server — actually runs the FastAPI application
+uvicorn[standard]==0.34.0
+
+# Settings & secrets — load variables from the .env file
+python-dotenv==1.0.1
+
+# Data validation models used by FastAPI (Pydantic V2)
+pydantic==2.10.4
+pydantic-settings==2.7.0
+
+# HTTP clients — call Upstox REST APIs from the backend
+requests==2.32.3
+httpx==0.28.1
+
+# WebSocket support (server-side; Flutter connects to us)
+websockets==14.1
+
+# Upstox Market Data Feed V3 protobuf decode (Phase 6)
+protobuf>=5.29.0,<6
+
+# Database ORM (SQLAlchemy 2.0 style)
+SQLAlchemy==2.0.36
+
+# Database migrations (schema version control)
+alembic==1.14.0
+
+# PostgreSQL driver — install later when we switch from SQLite to Postgres.
+# psycopg2-binary has no official Python 3.14 wheel yet, so it is omitted
+# for local Phase 1–8 development (we use SQLite via DATABASE_URL).
+# When deploying with PostgreSQL on 3.13/3.12, uncomment:
+# psycopg2-binary==2.9.10
+# Or use the modern driver:  pip install "psycopg[binary]"
+
+# JWT creation / verification for Flutter session tokens
+PyJWT==2.10.1
+passlib[bcrypt]==1.7.4
+
+# Rate limiting (used in later security phases)
+slowapi==0.1.9
+
+# Timezone database (required on Windows for ZoneInfo("Asia/Kolkata"))
+tzdata==2025.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.25.0
